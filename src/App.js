@@ -25,7 +25,7 @@ nameChangedHandler = (event) => {
         <h1>Markdown Previewer</h1>
 
         <Markdown
-        name={this.state.input}
+        preview={this.state.input}
         changed={this.nameChangedHandler}
         />
 
