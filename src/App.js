@@ -4,21 +4,19 @@ import './App.css';
 import Markdown from "./components/Markdown/Markdown";
 
 class App extends Component {
-  state = {
+  /*state = {
     persons: [
-
       {name:""},
-
     ]
+  }*/
+  state = {
+    input:""
   }
 
 nameChangedHandler = (event) => {
   this.setState ({
-    persons: [
-      {name: event.target.value},
-    ],
+    input: event.target.value
   });
-
 }
 
   render() {
@@ -27,7 +25,7 @@ nameChangedHandler = (event) => {
         <h1>Markdown Previewer</h1>
 
         <Markdown
-        name={this.state.persons[0].name}
+        name={this.state.input}
         changed={this.nameChangedHandler}
         />
 
