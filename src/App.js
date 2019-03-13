@@ -4,11 +4,6 @@ import './App.css';
 import Markdown from "./components/Markdown/Markdown";
 
 class App extends Component {
-  /*state = {
-    persons: [
-      {name:""},
-    ]
-  }*/
   state = {
     input:"TEST TO CHECK FOR TWO-WAY BINDING"
   }
@@ -26,10 +21,10 @@ nameChangedHandler = (event) => {
 
         <Markdown
         userInput={this.state.input}
+        changed={this.nameChangedHandler}
         /*I'm setting preview to this.state.input for now but
           I'll have to change it to the marked down version*/
         preview={this.state.input}
-        changed={this.nameChangedHandler}
         />
 
       </div>
