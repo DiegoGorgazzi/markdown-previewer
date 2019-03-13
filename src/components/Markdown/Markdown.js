@@ -8,8 +8,8 @@ const markdown = (props) => {
             id="editor"
             type="text"
             onChange={props.changed}
-            value={props.input}
-          />
+            value={props.userInput}
+            />
 
           <h3>OUTPUT </h3>
           <p
