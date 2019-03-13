@@ -4,11 +4,6 @@ import './App.css';
 import Markdown from "./components/Markdown/Markdown";
 
 class App extends Component {
-  /*state = {
-    persons: [
-      {name:""},
-    ]
-  }*/
   state = {
     input:"TEST TO CHECK FOR TWO-WAY BINDING"
   }
