@@ -8,7 +8,8 @@ class App extends Component {
     input:"TEST TO CHECK FOR TWO-WAY BINDING"
   }
 
-nameChangedHandler = (event) => {
+//handler to allow user input
+inputChangedHandler = (event) => {
   this.setState ({
     input: event.target.value
   });
@@ -21,7 +22,7 @@ nameChangedHandler = (event) => {
 
         <Markdown
         userInput={this.state.input}
-        changed={this.nameChangedHandler}
+        changed={this.inputChangedHandler}
         /*I'm setting preview to this.state.input for now but
           I'll have to change it to the marked down version*/
         preview={this.state.input}
