@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Markdown from "./components/Markdown/Markdown";
+import marked from 'marked';
 
 class App extends Component {
   state = {
@@ -32,7 +33,8 @@ class App extends Component {
   A blockquote:
   > In everything give thanks.
 
-  **bolded text**.
+  **bolded text**
+  __bolded text too__
 
   An image:
   ![A library](https://bit.ly/2T36yNG)
@@ -47,6 +49,14 @@ inputChangedHandler = (event) => {
   });
 }
 
+markedDownHandler = () => {
+  //marked(...this.state.input)
+  // Create reference instance
+  const toBeMarked=this.state.input;
+  console.log(marked(toBeMarked));
+  return marked(toBeMarked);
+}
+
   render() {
 
     return (
@@ -56,9 +66,8 @@ inputChangedHandler = (event) => {
         <Markdown
         userInput={this.state.input}
         changed={this.inputChangedHandler}
-        /*I'm setting preview to this.state.input for now but
-          I'll have to change it to the marked down version*/
-        preview={this.state.input}
+
+        preview={this.markedDownHandler()}
         />
 
       </div>
