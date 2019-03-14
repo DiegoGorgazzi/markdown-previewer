@@ -33,7 +33,6 @@ class App extends Component {
   A blockquote:
   > In everything give thanks.
 
-  **bolded text**
   __bolded text too__
 
   An image:
@@ -51,6 +50,10 @@ inputChangedHandler = (event) => {
 
 markedDownHandler = () => {
   const toBeMarked=this.state.input;
+  marked.setOptions({
+    gfm: true,
+    breaks: true
+  });
   //return toBeMarked;
   return marked(toBeMarked);
   //return {__html:marked(toBeMarked)};
