@@ -13,10 +13,11 @@ const markdown = (props) => {
 
           <h3>OUTPUT </h3>
           <p
-            id="preview"
+            id="AAApreview"
             >
-            {props.preview}
+
           </p>
+
       </div>
     )
 };

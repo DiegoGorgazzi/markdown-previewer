@@ -50,11 +50,10 @@ inputChangedHandler = (event) => {
 }
 
 markedDownHandler = () => {
-  //marked(...this.state.input)
-  // Create reference instance
   const toBeMarked=this.state.input;
-  console.log(marked(toBeMarked));
-  return marked(toBeMarked);
+
+  //return marked(toBeMarked);
+  return {__html:marked(toBeMarked)};
 }
 
   render() {
@@ -66,9 +65,11 @@ markedDownHandler = () => {
         <Markdown
         userInput={this.state.input}
         changed={this.inputChangedHandler}
+        preview={this.markedDownHandler}
 
-        preview={this.markedDownHandler()}
         />
+
+      <div id= "preview" dangerouslySetInnerHTML={this.markedDownHandler()} />
 
       </div>
 
