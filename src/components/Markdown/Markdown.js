@@ -1,6 +1,9 @@
 import React from "react";
 
 const markdown = (props) => {
+
+  let htmlPropsPreview= {__html: props.preview};
+
     return (
       <div>
           <h3>INPUT</h3>
@@ -12,11 +15,9 @@ const markdown = (props) => {
             />
 
           <h3>OUTPUT </h3>
-          <p
-            id="AAApreview"
-            >
 
-          </p>
+          <div id= "preview"
+            dangerouslySetInnerHTML={htmlPropsPreview} />
 
       </div>
     )
