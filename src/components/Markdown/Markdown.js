@@ -1,11 +1,14 @@
 import React from "react";
+import "./Markdown.css";
 
 const markdown = (props) => {
 
   let htmlPropsPreview= {__html: props.preview};
 
     return (
-      <div>
+      <div className="Markdown">
+
+        <div className="input">
           <h3>INPUT</h3>
           <textarea
             id="editor"
@@ -13,11 +16,14 @@ const markdown = (props) => {
             onChange={props.changed}
             value={props.userInput}
             />
+        </div>
 
+        <div className="output">
           <h3>OUTPUT </h3>
 
           <div id= "preview"
             dangerouslySetInnerHTML={htmlPropsPreview} />
+        </div>
 
       </div>
     )
