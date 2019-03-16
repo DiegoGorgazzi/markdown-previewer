@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Markdown from "./components/Markdown/Markdown";
 import marked from 'marked';
@@ -54,9 +53,9 @@ markedDownHandler = () => {
     gfm: true,
     breaks: true
   });
-  //return toBeMarked;
+
   return marked(toBeMarked);
-  //return {__html:marked(toBeMarked)};
+
 }
 
   render() {
@@ -73,8 +72,6 @@ markedDownHandler = () => {
         preview={this.markedDownHandler()}
 
         />
-
-
 
       </div>
 
