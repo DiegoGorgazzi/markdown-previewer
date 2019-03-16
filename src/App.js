@@ -7,37 +7,37 @@ import marked from 'marked';
 class App extends Component {
   state = {
     input:
-    `
-  # A header (H1 size)
+`
+# A header (H1 size)
 
-  ## A sub header (H2 size)
+## A sub header (H2 size)
 
-  A link: [GitHub Pages](https://pages.github.com/)
+A link: [GitHub Pages](https://pages.github.com/)
 
-  Inline code: \` state={input:""} \`
+Inline code: \` state={input:""} \`
 
-  \`\`\`
-  //This is a code block:
-  inputChangedHandler = (event) => {
-    this.setState ({
-      input: event.target.value
+\`\`\`
+//This is a code block:
+inputChangedHandler = (event) => {
+  this.setState ({
+    input: event.target.value
     });
   }
-  \`\`\`
+\`\`\`
 
-  A List:
-  - eggs
-  - milk
-  - nutella
+A List:
+- eggs
+- milk
+- nutella
 
-  A blockquote:
-  > In everything give thanks.
+A blockquote:
+> In everything give thanks.
 
-  __bolded text too__
+__bolded text too__
 
-  An image:
-  ![A library](https://bit.ly/2T36yNG)
-  `
+An image:
+![A library](https://bit.ly/2T36yNG)
+`
   }
 
 
