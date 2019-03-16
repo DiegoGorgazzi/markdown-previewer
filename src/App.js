@@ -64,8 +64,10 @@ markedDownHandler = () => {
     return (
       <div className="App">
         <h1>Markdown Previewer</h1>
+        <h3>a Reactive Responsive App</h3>
+          <p className="appAuthor">by <a href="https://github.com/DiegoGorgazzi">me</a></p>
 
-        <Markdown
+      <Markdown
         userInput={this.state.input}
         changed={this.inputChangedHandler}
         preview={this.markedDownHandler()}

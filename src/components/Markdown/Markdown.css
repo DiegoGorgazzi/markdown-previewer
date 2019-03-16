@@ -17,7 +17,7 @@
   width: 45%;
   margin: 2.5%;
   line-height: 75px;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
 }
 
 .output  {
@@ -29,20 +29,25 @@
   font-size: calc(8px + 2vmin);
   text-align: left;
   line-height: normal;
+  padding-top: 2.5%;
 }
 
 #preview {
-  margin: 1%;
+  margin: 5% 1% 1% 1%;
 }
 
+blockquote {
+  border-radius: 5%;
+  font-style: italic;
+  background-color:#fff2fc;
+}
 
 code {
-  max-width: 50%;
-  box-sizing: border-box;
-  background-color: #79b1e0;
+  background-color: #edfaff;
   height: auto;
   font-size: calc(6px + 2vmin);
   white-space: normal;
+  border-radius: 5%;
 }
 
 pre {
@@ -50,11 +55,11 @@ pre {
   height: auto;
   font-size: calc(6px + 2vmin);
   white-space: normal;
-  background-color: #79b1e0;
-  border-radius: 3px;
+  background-color: #edfaff;
+  border-radius: 5%;
 }
 
-h3 {
+.subTitle {
   text-align: center;
 }
 
@@ -66,7 +71,6 @@ img {
 textarea {
   width: 100%;
   min-height: 300px;
-  padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
