@@ -30,7 +30,7 @@ A List:
 - nutella
 
 A blockquote:
-> In everything give thanks.
+> "In everything give thanks."
 
 __bolded text too__
 
