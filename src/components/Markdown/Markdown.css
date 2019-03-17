@@ -39,14 +39,17 @@ blockquote {
   border-radius: 5%;
   font-style: italic;
   background-color:#fff2fc;
+  font-family: Elephant;
 }
 
 code {
   background-color: #edfaff;
   height: auto;
-  font-size: calc(6px + 2vmin);
+  font-size: calc(2px + 2vmin);
   white-space: normal;
   border-radius: 5%;
+  font-family: "Courier New";
+  font-weight: bold;
 }
 
 pre {

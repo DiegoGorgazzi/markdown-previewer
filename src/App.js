@@ -15,8 +15,8 @@ A link: [GitHub Pages](https://pages.github.com/)
 
 Inline code: \` state={input:""} \`
 
+This is a code block:
 \`\`\`
-//This is a code block:
 inputChangedHandler = (event) => {
   this.setState ({
     input: event.target.value
