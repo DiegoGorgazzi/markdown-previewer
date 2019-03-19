@@ -25,9 +25,9 @@ inputChangedHandler = (event) => {
 \`\`\`
 
 A List:
-- eggs
-- milk
-- nutella
+- Eggs
+- Milk
+- Nutella
 
 A blockquote:
 > "In everything give thanks."
