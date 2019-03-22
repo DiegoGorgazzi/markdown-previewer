@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a challenge project from freeCodeCamp (FCC) which consists in building an App from scratch. The App is a Build a Markdown Previewer.
 
-## Available Scripts
+I've included the original text below with instructions on what they want students to accomplish (copied from: https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer/).
 
-In the project directory, you can run:
+### What I did
+* Solved the problem using React following the specs from FCC.
 
-### `npm start`
+### What I'm probably going to be doing after this
+* Although not required or necessary (because there's no data stored in the server from the user), I'd be nice to add a "sanitize" function.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##  Contributing
+The main purpose of this repository was to solve the challenge and share my solution.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This, to me, was a pretty boring project. I'm not expecting contributions at all (I'm not even sure there's anything cool or productive to do with this previewer), but if you know me, I hardly say "no" to anything so, if you want to contribute, be my guest. Also, as always, if you have comments on the code I wrote I'd love to hear from you as well. I'll take all criticism as constructive (but try to be nice!).  
 
-### `npm test`
+### Code of Conduct
+Please keep it professionally clean and friendly. That includes, but is not limited to:
+* Being patient. If you get frustrated, step away from the keyboard for a few minutes or hours before you do something you might regret later (if you need a few days, maybe you're in the wrong business?).
+* Being all inclusive. We are all people of different age, sex, religion, race, nationality, etc, etc. But, we're all people. Treat people like people and that'll be a good start.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Time is always in short supply
+* Time is always precious. There's always another project in the pipeline that needs (or would be nice) to be done and applying improvements to past projects is always a challenge. Still, I'll do my best to come back to this if there are any improvements (obviously, there's always room for styling improvements...). If you contribute and I don't reply right away please accept my apologies in advance but know your contribution is important and I will reply as soon as possible.
 
-### `npm run build`
+## Installation, Available Scripts, and other React related stuff
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Please visit Create React App's page (https://github.com/facebook/create-react-app).   
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Front End Libraries Projects - Build a Markdown Previewer
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/GrZVVO.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
-### `npm run eject`
+You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+User Story #1: I can see a textarea element with a corresponding id="editor".
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+User Story #2: I can see an element with a corresponding id="preview".
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+User Story #3: When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+User Story #4: When I enter GitHub flavored markdown into the #editor element, the text is rendered as HTML in the #preview element as I type (HINT: You don't need to parse Markdown yourself - you can import the Marked library for this: https://cdnjs.com/libraries/marked).
 
-## Learn More
+User Story #5: When my markdown previewer first loads, the default text in the #editor field should contain valid markdown that represents at least one of each of the following elements: a header (H1 size), a sub header (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+User Story #6: When my markdown previewer first loads, the default markdown in the #editor field should be rendered as HTML in the #preview element.
+Optional Bonus (you do not need to make this test pass): When I click a link rendered by my markdown previewer, the link is opened up in a new tab (HINT: read the Marked.js docs for this one!).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Optional Bonus (you do not need to make this test pass): My markdown previewer interprets carriage returns and renders them as br (line break) elements.
 
-### Code Splitting
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Once you're done, submit the URL to your working project with all its tests passing.
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Remember to use the Read-Search-Ask method if you get stuck.
