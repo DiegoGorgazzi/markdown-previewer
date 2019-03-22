@@ -25,10 +25,10 @@
   min-width: 300px;
   width: 45%;
   margin: 2.5%;
+	padding-top: 2.5%;
+	line-height: normal;
   font-size: calc(8px + 2vmin);
   text-align: left;
-  line-height: normal;
-  padding-top: 2.5%;
 }
 
 #preview {
@@ -108,7 +108,5 @@ textarea {
     margin: 2.5%;
     font-size: calc(8px + 2vmin);
     text-align: left;
-    line-height: normal;
-    padding-top: 2.5%;
   }
 }
