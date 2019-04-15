@@ -1,4 +1,4 @@
-This is a challenge project from freeCodeCamp (FCC) which consists in building an App from scratch. The App is a Build a Markdown Previewer.
+This is a challenge project from freeCodeCamp (FCC) which consists in building an App from scratch. The App is a Markdown Previewer.
 
 Here's my working version (including the testing suite from FCC):
 https://markdown-previewer-diego.firebaseapp.com/
